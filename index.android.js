@@ -33,4 +33,4 @@ const App = StackNavigator({
   AddDrink: { screen: AddDrink },
 });
 
-AppRegistry.registerComponent('AwesomeProject', () => App);
+AppRegistry.registerComponent('DanielsDrinks', () => App);
