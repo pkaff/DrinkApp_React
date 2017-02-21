@@ -1,8 +1,10 @@
+import DrinkRow from './ListView_DrinkRow'
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   View,
+  ListView,
   Text,
   Button,
 } from 'react-native';
@@ -14,13 +16,19 @@ export default class AllDrinks extends Component {
 
   render() {
     return (
-      <View>
+      <View
+        style={{ flex: 1, backgroundColor: 'teal' }}
+      >
         <Button
           onPress={() => this.props.navigation.navigate('AddDrink')}
-          title='Learn More'
+          title='Add Drink'
           color='#841584'
         >
         </Button>
+        <ListView
+          dataSource={new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 }).cloneWithRows([{ drinkName: 'Margarita', glass: 'Margarita' }, { drinkName: 'Soda Pop', glass: 'Highball' }])}
+          renderRow={(data) => <DrinkRow {...data} />}
+        />
       </View>
     );
   }
