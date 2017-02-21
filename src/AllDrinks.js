@@ -19,7 +19,6 @@ export default class AllDrinks extends Component {
           onPress={() => this.props.navigation.navigate('AddDrink')}
           title='Learn More'
           color='#841584'
-          accessabilityLabel='Learn more about this purple button'
         >
         </Button>
       </View>
