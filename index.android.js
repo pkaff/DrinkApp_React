@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import AddDrink from './src/AddDrink';
 import AllDrinks from './src/AllDrinks';
 import MyDrinks from './src/MyDrinks';
@@ -11,10 +5,6 @@ import MyDrinks from './src/MyDrinks';
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  View,
-  Text,
-  Button,
 } from 'react-native';
 import {
   TabNavigator,
