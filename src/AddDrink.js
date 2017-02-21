@@ -1,4 +1,5 @@
 
+
 import React, { Component } from 'react';
 import {
   Container,
@@ -8,10 +9,11 @@ import {
   Input,
   Label,
   Button,
-  Icon,
   Text,
-  Grid
+  Grid,
+  Icon,
 } from 'native-base';
+//import Icon from 'react-native-vector-icons';
 
 export default class AddDrink extends Component {
   static navigationOptions = {
@@ -32,25 +34,25 @@ export default class AddDrink extends Component {
             </Item>
 
           </Form>
-          <Grid>
-            <Button
-              style={{ flex: 1, margin: 10 }}
-              iconRight
-              block
-              onPress={() => { }}
-            >
-              <Icon style={{ padding: 4 }} name='add' />
-              <Text>Add drink</Text>
-            </Button>
-            <Button
-              style={{ flex: 1, margin: 10 }}
-              iconLeft
-              block
-              onPress={() => { }}
-            >
-              <Text>Clear form</Text>
-              <Icon style={{ padding: 4 }} name='remove' />
-            </Button>
+          <Grid style={{ alignItems: 'center' }}>
+              <Button
+                style={{ flex: 1, margin: 10, alignItems: 'center' }}
+                iconLeft
+                block
+                onPress={() => { }}
+              >
+                <Icon style={{ padding: 4 }} name='add' />
+                <Text>Add drink</Text>
+              </Button>
+              <Button
+                style={{ flex: 1, margin: 10, alignItems: 'center' }}
+                iconRight
+                block
+                onPress={() => { }}
+              >
+                <Text>Clear form</Text>
+                <Icon style={{ padding: 4 }} name='remove' />
+              </Button>
           </Grid>
         </Content>
       </Container>
