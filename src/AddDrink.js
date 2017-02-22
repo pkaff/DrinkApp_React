@@ -11,7 +11,7 @@ import {
   Button,
   Text,
   Grid,
-  Icon,
+  Icon
 } from 'native-base';
 //import Icon from 'react-native-vector-icons';
 
@@ -51,7 +51,7 @@ export default class AddDrink extends Component {
                 onPress={() => { }}
               >
                 <Text>Clear form</Text>
-                <Icon style={{ padding: 4 }} name='remove' />
+                <Icon style={{ padding: 4 }} name='close' />
               </Button>
           </Grid>
         </Content>
